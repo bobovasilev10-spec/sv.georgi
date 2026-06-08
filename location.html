@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Местността — Къща за гости Свети Георги</title>
+  <meta name="description" content="Забележителности и природа около село Тъжа.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="homepage.css">
+  <style>
+    .page-hero {
+      min-height: 58vh;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      background: #0e1d16;
+      color: #fff;
+    }
+    .page-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(8,18,13,.86), rgba(8,18,13,.34) 52%, rgba(8,18,13,.68)),
+        var(--hero-img) center / cover no-repeat;
+      transform: scale(1.03);
+    }
+    .page-hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 42%;
+      background: linear-gradient(to top, rgba(0,0,0,.66), transparent);
+    }
+    .page-hero-inner {
+      position: relative;
+      z-index: 2;
+      padding: 190px 0 76px;
+    }
+    .page-hero h1 {
+      max-width: 920px;
+      font-size: clamp(56px, 8vw, 108px);
+      line-height: .9;
+    }
+    .page-hero .lead { max-width: 720px; }
+    .page-section { padding: 104px 0; }
+    .split {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 72px;
+      align-items: start;
+    }
+    .content-card {
+      padding: 48px;
+      background: var(--paper);
+      border-left: 4px solid var(--gold);
+      box-shadow: 0 18px 50px rgba(13,29,22,.08);
+    }
+    .content-card p { margin: 0 0 22px; color: var(--muted); font-size: 18px; }
+    .content-card p:last-child { margin-bottom: 0; }
+    .list-grid { display:grid; grid-template-columns: repeat(3,1fr); gap:18px; }
+    .info-box { padding:32px; background:var(--paper); border:1px solid var(--line); }
+    .info-box h3 { margin:0 0 10px; color:var(--forest); font-size:32px; }
+    .info-box p { margin:0; color:var(--muted); }
+    .contact-grid { display:grid; grid-template-columns: 1fr 1fr; gap:24px; }
+    .gallery-page { display:grid; grid-template-columns: repeat(3,1fr); gap:8px; }
+    .gallery-page div { min-height:300px; background:var(--img) center / cover no-repeat; }
+    @media (max-width:980px) { .split,.list-grid,.contact-grid,.gallery-page { grid-template-columns:1fr 1fr; } }
+    @media (max-width:640px) {
+      .page-hero-inner { padding: 130px 0 54px; }
+      .page-hero h1 { font-size: 54px; }
+      .split,.list-grid,.contact-grid,.gallery-page { grid-template-columns:1fr; }
+      .content-card { padding:32px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="wrap"><span>с. Тъжа · Стара планина</span><a href="tel:+359879255757">+359 87 925 5757</a></div></div>
+  <header><div class="wrap nav"><a class="logo" href="index.html"> <img src="images/LOGO.webp" alt="Име на хотела"></a>
+    <nav class="menu"><a href="about.html">За къщата</a><a href="accommodation.html">Настаняване</a><a href="gallery.html">Галерия</a><a href="location.html">Местността</a><a href="contacts.html">Контакти</a></nav><a class="btn" href="#booking">Резервирай</a></div></header>
+
+  <main>
+    <section class="page-hero" style="--hero-img:url('images/img_3008.jpg')">
+      <div class="wrap page-hero-inner">
+        <div class="eyebrow">Местността</div>
+        <h1 class="serif">Село Тъжа и красотата на Балкана.</h1>
+        <p class="lead">Районът е подходящ за разходки, планински маршрути и спокойни дни сред природа.</p>
+      </div>
+    </section>
+
+    <section class="page-section location"><div class="wrap"><div class="section-head"><div><div class="kicker">В близост</div><h2 class="serif">Маршрути и забележителности.</h2></div><p>Страницата може да бъде развита допълнително със SEO текстове за всяка забележителност и полезна информация за гостите.</p></div><div class="nearby"><div class="place"><span>01</span><h3 class="serif">Бабско пръскало</h3></div><div class="place"><span>02</span><h3 class="serif">Масив Триглав</h3></div><div class="place"><span>03</span><h3 class="serif">Връх Ботев</h3></div><div class="place"><span>04</span><h3 class="serif">Къща музей</h3></div><div class="place"><span>05</span><h3 class="serif">Арт галерия</h3></div></div></div></section>
+  </main>
+
+  <footer><div class="wrap foot"><div><strong>Къща за гости Свети Георги</strong><p>с. Тъжа · Стара планина</p></div><div><strong>Контакти</strong><a href="tel:+359879255757">+359 87 925 5757</a><a href="mailto:pochivka.svgeorgi@abv.bg">pochivka.svgeorgi@abv.bg</a></div><div><strong>Навигация</strong><a href="about.html">За къщата</a><a href="accommodation.html">Настаняване</a><a href="gallery.html">Галерия</a><a href="location.html">Местността</a></div></div></footer>
+</body>
+</html>
